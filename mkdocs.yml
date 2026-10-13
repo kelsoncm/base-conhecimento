@@ -115,6 +115,9 @@ nav:
           - SSO do Moodle com auth_suap: ifrn/ava/sso-moodle-auth-suap.md
           - Bloqueio e edição de CPF e campos de perfil: ifrn/ava/edicao-bloqueio-cpf-campos-perfil-moodle.md
           - Diário, notas e secretaria: ifrn/ava/configuracao-diario-notas-professor-secretaria.md
+          - Modelos de disciplinas e restauração: ifrn/ava/disciplinas-modelos-restauracao.md
+          - Anotação em PDF e acessibilidade: ifrn/ava/anotar-pdf-acessibilidade-moodle.md
+          - Instâncias Moodle (Acadêmico, Projetos e Aberto): ifrn/ava/instancias-moodle-aberto-projetos.md
           - Ambiente de desenvolvimento (Docker): ifrn/ava/ambiente-dev-docker-compose-moodle.md
           - Build e release da imagem Moodle: ifrn/ava/build-release-imagem-moodle-docker.md
           - Tema e blocos SUAP: ifrn/ava/tema-suap-moodle.md
