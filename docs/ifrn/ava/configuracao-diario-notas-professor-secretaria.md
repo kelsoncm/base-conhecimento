@@ -68,25 +68,28 @@ A importação não é automática nem em tempo real; ela ocorre quando o profes
 
 **Configuração obrigatória do livro de notas do Moodle**
 
-O SUAP só consegue ler as notas se cada avaliação do livro de notas tiver, no campo **Número de identificação** (*ID number*), a sigla padrão do SUAP. Sem isso, a importação traz valores em branco ou errados.
+O SUAP só consegue ler as notas se cada avaliação ou categoria do livro de notas tiver, no campo **Número de identificação** (*ID number*), a sigla padrão do SUAP. Sem isso, a importação traz valores em branco ou errados.
 
-| Sigla (ID number) | Avaliação |
-|---|---|
-| `N1` | Primeira avaliação |
-| `N2` | Segunda avaliação |
-| `N3` | Terceira avaliação (se aplicável) |
-| `N4` | Quarta avaliação (se aplicável) |
-| `NAF` | Avaliação final |
+| Sigla (ID number) | Avaliação / Etapa | Exemplo de Categoria no Moodle |
+|---|---|---|
+| `N1` | Primeira avaliação / Unidade | Categoria *Unidades* ou *Etapa 1* |
+| `N2` | Segunda avaliação / Provas | Categoria *Provas* ou *Etapa 2* |
+| `N3` | Terceira avaliação (se aplicável) | Categoria *Etapa 3* |
+| `N4` | Quarta avaliação (se aplicável) | Categoria *Etapa 4* |
+| `NAF` | Avaliação final / Recuperação | Categoria *Recuperação* ou *Prova Final* |
 
-Passo a passo:
+**Passo a passo detalhado na interface do Moodle:**
 
-1. No curso do Moodle, abrir **Notas**.
-2. Trocar a visão para **Configuração do Livro de Notas**.
-3. Na linha da **categoria** que agrupa a etapa (por exemplo, a média da etapa 1) ou da **atividade** única que vale a etapa, clicar em **Editar > Editar configurações**.
-4. Em **Item de nota** (clique em *Mostrar mais* se necessário), preencher **Número de identificação** com a sigla, exatamente em maiúsculas.
-5. **Salvar mudanças** e repetir para as demais etapas.
+1. No curso do Moodle, acesse o menu superior **Notas** (ou lateral) e selecione **Configuração do Livro de Notas** (em algumas versões: *Relatório de notas > Configuração do Livro de Notas*).
+2. Na parte inferior da página, utilize o botão **Adicionar categoria** para criar as categorias correspondentes às etapas avaliativas da disciplina (ex.: *Unidades*, *Provas*, *Recuperação*).
+3. Na linha de cada categoria recém-criada, clique em **Editar > Editar configurações**.
+4. Expanda a seção **Total da categoria** (ou clique em *Mostrar mais* em **Item de nota**).
+5. No campo **Número de identificação** (ou *Número de Identificação no SUAP*), digite exatamente o código em maiúsculas (`N1`, `N2`, `NAF`).
+6. Clique em **Salvar mudanças**.
+7. Mova as atividades avaliativas (tarefas, questionários, fóruns avaliados) para dentro de suas respectivas categorias.
+8. Ao finalizar as notas no Moodle, acesse o **SUAP**, entre no respectivo diário da disciplina e clique em **Importar Notas Moodle** (ou *Sincronizar Notas*). O SUAP preencherá a caderneta eletrônica automaticamente com as médias calculadas de cada categoria identificada.
 
-O identificador diferencia maiúsculas de minúsculas: `n1` ou `Nota 1` fazem a integração falhar para aquele item. A nota importada é a nota final consolidada do item ou categoria identificado. Você pode usar qualquer metodologia de avaliação prevista no PPC, desde que a nota final de cada etapa esteja no item com a sigla correta.
+> **Atenção:** O identificador diferencia maiúsculas de minúsculas (`n1`, `Nota 1` ou espaços extras farão a integração ignorar a nota). A nota importada é a nota consolidada do item ou da categoria cujo código confere com o SUAP.
 
 ### C. FAQ de TIC
 

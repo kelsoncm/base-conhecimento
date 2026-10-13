@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Configuração de clientes de e-mail institucional"
 category: "E-mail"
 service: "Webmail Institucional"
@@ -89,6 +89,33 @@ O e-mail institucional pode ser acessado via webmail ou configurado em clientes 
 - Verificar se a senha do SUAP está correta.
 - Testar acesso ao webmail para confirmar credenciais.
 
+### 6. Solicitação de e-mail institucional para setor, projeto, curso ou evento
+
+Coordenadores e gestores que precisam de uma conta de correio eletrônico compartilhada para sua unidade ou projeto devem solicitar a criação via SUAP:
+
+1. Acessar o SUAP e ir em **Central de Serviços > + Abrir Chamado**.
+2. Selecionar a área **Tecnologia da Informação**.
+3. Na aba **Comunicações**, escolher o serviço **"Solicitar criação de e-mail institucional para setor/projeto/evento"**.
+4. No formulário de abertura, fornecer obrigatoriamente:
+   - Nome do setor, projeto, evento ou curso (e sugestão de endereço/alias institucional).
+   - Nome completo e matrícula dos servidores responsáveis que terão acesso à caixa postal.
+   - Justificativa e ato formal comprobatório (anexar portaria de designação de coordenação, homologação de projeto ou edital).
+
+### 7. Governança e alteração de e-mail secundário de aluno
+
+O e-mail secundário cadastrado no SUAP é o canal crítico usado para envio de tokens de redefinição de senha e comunicados aos estudantes.
+
+Por política de segurança institucional contra invasão de contas, apenas servidores com perfis acadêmicos específicos possuem permissão para alterar esse dado no SUAP:
+
+- **Administrador Acadêmico**
+- **Auxiliar de Secretaria Acadêmica**
+- **Coordenador de TI de campus**
+- **Coordenador de TI sistêmico**
+- **Diretor Acadêmico**
+- **Secretário Acadêmico**
+
+> **Importante:** Docentes, tutores e atendentes sem esses perfis não possuem autorização nem interface para alterar o e-mail do estudante. Caso o aluno tenha perdido acesso ao e-mail secundário e ao GOV.BR, deve ser orientado a abrir chamado na Central de Serviços para a CRA (Secretaria Acadêmica) ou comparecer presencialmente munido de documento oficial com foto.
+
 ## Quando escalar
 
 - Quando o problema persistir após verificar todas as configurações.
@@ -97,18 +124,21 @@ O e-mail institucional pode ser acessado via webmail ou configurado em clientes 
 
 ## Equipe responsável
 
-DINRE (Diretoria de Infraestrutura de Redes e Serviços).
+- **DINRE (Diretoria de Infraestrutura de Redes e Serviços):** servidores de correio e infraestrutura SMTP.
+- **COTIC / CRA locais:** aprovação de caixas setoriais e manutenção cadastral discente.
 
 ## Links oficiais
 
 - [Webmail Institucional](https://webmail.ifrn.edu.br/)
+- [Central de Serviços do SUAP](https://suap.ifrn.edu.br/centralservicos/)
 
 ## Nível de confiabilidade
 
-Prático.
+Confirmado / Prático.
 
 ## Notas adicionais
 
-- O Thunderbird tem sido relatado como mais estável que o Outlook em alguns cenários.
+- O Thunderbird tem sido relatado como mais estável que o Outlook em alguns cenários corporativos com IMAP.
 - Durante atualizações do servidor, pode haver instabilidade temporária.
-- A porta SMTP 25 é frequentemente bloqueada por políticas de segurança.
+- A porta SMTP 25 é frequentemente bloqueada por políticas de segurança de provedores residenciais e móveis.
+- Contas de projetos ou eventos temporários devem ser renovadas periodicamente para evitar encerramento automático após o término do vínculo.

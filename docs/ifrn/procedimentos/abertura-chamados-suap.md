@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Abertura de chamados na Central de Serviços do SUAP"
 category: "Procedimentos"
 service: "Central de Serviços"
@@ -42,60 +42,77 @@ A Central de Serviços do SUAP permite abertura de chamados para diversos tipos 
   - Pedido de instalação de software.
   - Solicitação de equipamento.
 
-### 3. Escolher categoria adequada
+### 3. Escolher categoria e área adequada
 
-Algumas categorias comuns:
+Na Central de Serviços do SUAP (`+ Abrir Chamado`), as áreas e categorias mais utilizadas no contexto do Campus Natal – Zona Leste e da EaD são:
 
-- **Seção de Ensino:** acesso a sistemas acadêmicos, Guacamole, Q-Acadêmico.
-- **TI:** problemas de rede, e-mail, sistemas institucionais.
-- **Acesso remoto:** solicitação de VPN, Guacamole.
-- **Outras:** conforme disponibilidade no sistema.
+#### A. EaD e Tecnologias Educacionais (DEAD/ZL)
+Área voltada para suporte a ambientes virtuais, design instrucional e recursos educacionais digitais:
+
+1. **Ambiente Virtual de Aprendizagem Moodle:**
+   - Suporte aos ambientes Moodle: Acadêmico, Presencial, Projetos, Extensão ou Aberto.
+   - Demandas de sincronização de turmas, criação de salas virtuais e suporte a professores/mediadores.
+2. **Serviços e Aplicativos:**
+   - Questões técnicas da infraestrutura do Portal EaD e da Central de Ajuda (não inclui publicação editorial de notícias).
+   - Solicitação de novos tutoriais e procedimentos técnicos.
+3. **Diagramação e Design:**
+   - Criação de peças gráficas institucionais (banners, ilustrações, logotipos, diagramação de apostilas/e-books).
+   - **Briefing obrigatório:** Para otimizar a produção, o chamado deve informar:
+     - Conteúdo textual e mensagens obrigatórias da peça.
+     - Destino/mídia de aplicação (Moodle, apostilas, Instagram, site institucional, YouTube, etc.).
+     - Referências visuais ou links de inspiração.
+     - Se é atualização de peça existente ou criação do zero.
+4. **Revisão Linguística:**
+   - Revisão textual, ortográfica e gramatical de materiais didáticos, editais, e-books e documentos acadêmicos da DEAD.
+5. **Audiovisual:**
+   - Agendamento de estúdio de gravação, ilha de edição e podcast.
+   - Solicitação de transmissão ao vivo de eventos institucionais e suporte em webconferências.
+6. **Capacitação:**
+   - Demandas relacionadas a oficinas, minicursos e formações promovidas pela DEAD/ZL.
+
+#### B. Tecnologia da Informação (COTIC / TI)
+Canal oficial para atendimento de infraestrutura de TIC:
+
+- **Manutenção de Equipamentos:** computadores, periféricos e impressoras.
+- **Redes e Comunicações:** rede cabeada, Wi-Fi institucional (WIFRN, Eduroam), telefonia e criação de e-mails para setores/projetos.
+- **Sistemas e Contas:** permissões no SUAP, problemas de autenticação, cadastro de prestadores e liberação de acessos.
+
+#### C. Ensino / Coordenadoria de Registros Acadêmicos (CRA - antiga Secretaria Acadêmica)
+Atendimento de processos de registros acadêmicos do campus:
+
+- Problemas no cadastro discente, matrículas, trancamentos, históricos e emissão de diplomas/certificados.
+- Regularização de vínculo acadêmico para acesso aos sistemas.
+
+#### D. Manutenção Predial
+- Demandas de infraestrutura física: alvenaria, marcenaria, instalações elétricas, hidráulicas e climatização/ar-condicionado.
 
 ### 4. Preencher o formulário
 
-- Descrever o problema ou solicitação de forma clara.
-- Incluir informações relevantes:
-  - Equipamento afetado.
-  - Mensagens de erro.
-  - Passo a passo para reproduzir o problema.
-  - Impacto na atividade.
-- Anexar prints ou logs, se aplicável.
+- Descrever o problema ou solicitação de forma clara e objetiva.
+- Incluir informações essenciais:
+  - Sistema, ambiente ou equipamento afetado.
+  - Mensagens de erro completas e passos para reprodução.
+  - Setor demandante e justificativa/prazo (quando aplicável).
+  - Anexar capturas de tela (prints), formulários ou documentos de apoio.
 
 ### 5. Acompanhar o chamado
 
 - O chamado receberá um número de protocolo.
-- Acompanhar status pela Central de Serviços.
-- Responder solicitações de informação da equipe de suporte.
-
-### 6. Exemplos de classificação
-
-#### Acesso ao Guacamole
-
-- Categoria: Seção de Ensino.
-- Descrição: Solicitar acesso remoto ao Q-Acadêmico.
-- Fluxo: chamado vai para PROEN, que libera acesso via grupo do AD.
-
-#### Problema de e-mail
-
-- Categoria: TI.
-- Descrição: Relatar problema com envio/recebimento de e-mails.
-- Fluxo: chamado vai para equipe de e-mail/DINRE.
-
-#### Solicitação de acesso à VPN
-
-- Categoria: Acesso remoto.
-- Descrição: Solicitar acesso remoto para trabalho externo.
-- Fluxo: chamado vai para equipe de rede.
+- Notificações de resposta são enviadas por e-mail e ficam visíveis na lista de chamados do SUAP.
+- Caso a equipe requisite informações adicionais, responder diretamente pela interface do chamado para evitar encerramento por inatividade.
 
 ## Quando escalar
 
-- Quando o chamado não for atendido em tempo razoável.
-- Quando a classificação estiver claramente incorreta.
-- Quando o problema for crítico e afetar múltiplos usuários.
+- Quando o chamado não for atendido no SLA estabelecido para a categoria.
+- Quando a demanda for classificada incorretamente ou precisar de reatribuição de setor.
+- Quando o incidente for crítico e impactar aulas síncronas, transmissões ao vivo ou prazos de editais.
 
 ## Equipe responsável
 
-Central de Serviços e equipes de suporte por categoria.
+- **TIC / COTIC:** suporte de infraestrutura e sistemas sistêmicos.
+- **DEAD/ZL:** equipes de AVA/Moodle, Audiovisual, Diagramação/Design, Revisão e Comunicação.
+- **CRA (Secretaria Acadêmica):** registros acadêmicos.
+- **Coordenação de Manutenção:** serviços prediais.
 
 ## Links oficiais
 
