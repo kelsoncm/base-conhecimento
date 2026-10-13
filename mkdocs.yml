@@ -131,9 +131,16 @@ nav:
           - Windows Update e WSUS (RSAT): ifrn/sistemas/windows-update-wsus-rsat.md
           - Limites de Envio no Webmail: ifrn/sistemas/limites-envio-email-webmail.md
           - Sistema de Ponto (Cadastro Digital): ifrn/sistemas/sistema-ponto-cadastro-digital.md
+          - Processo Seletivo (Gestão de Editais): ifrn/sistemas/processo-seletivo-gestao-editais.md
+          - Eleições no Sistema Helios: ifrn/sistemas/eleicoes-sistema-helios.md
+          - Armazenamento em Nuvem (Google, M365 e RNP): ifrn/sistemas/politica-armazenamento-nuvem.md
+          - ConferênciaWeb (Visão do Aluno): ifrn/sistemas/rnp-conferenciaweb-aluno.md
+          - ConferênciaWeb (Visão do Professor): ifrn/sistemas/rnp-conferenciaweb-professor.md
+          - ConferênciaWeb (Visão do Administrador): ifrn/sistemas/rnp-conferenciaweb-administrador.md
       - Procedimentos:
-          - Liberação de Usuários Externos: ifrn/procedimentos/liberacao-usuarios-externos.md
+          - Cadastro de Usuários e Colaboradores Externos: ifrn/procedimentos/liberacao-usuarios-externos.md
           - Abertura de Chamados no SUAP: ifrn/procedimentos/abertura-chamados-suap.md
+          - Protocolo Digital e Processos: ifrn/procedimentos/protocolo-digital-processos.md
       - Contratos:
           - Outsourcing de Impressão: ifrn/contratos/outsourcing-impressao-demanda.md
       - Acesso Remoto:
