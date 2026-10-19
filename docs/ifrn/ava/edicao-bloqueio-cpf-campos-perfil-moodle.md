@@ -90,3 +90,4 @@ Prático.
 
 - Para usuários que realizam login via SUAP (`auth_suap`), os dados de perfil continuam sendo sincronizados automaticamente a cada login a partir do SUAP.
 - No Moodle Aberto, o usuário é a autoridade das suas informações cadastrais locais, justificando a permissão de edição do próprio CPF.
+- Para casos de contas criadas via login social/externo (`auth_oauth2`) com campos de nome e sobrenome em branco no Moodle Aberto, consulte [Usuários com Nome Completo Vazio no Moodle Aberto (OAuth 2)](usuarios-sem-nome-oauth2-moodle-aberto.md).
