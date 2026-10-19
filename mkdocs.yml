@@ -72,7 +72,7 @@ extra_javascript:
 extra:
   analytics:
     provider: google
-    property: !ENV [GA_MEASUREMENT_ID, ""]
+    property: !ENV [GA_MEASUREMENT_ID, "G-EC3SFY8BMQ"]
     feedback:
       title: Este artigo foi útil?
       ratings:
