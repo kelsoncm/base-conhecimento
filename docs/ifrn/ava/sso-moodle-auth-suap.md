@@ -128,6 +128,7 @@ Equipe de TIC/AVA (administração do Moodle); administradores do SUAP para o ca
 - [SUAP](https://suap.ifrn.edu.br)
 - [Integração com a API do SUAP](../suap/integracao-api-suap.md)
 - [Integração SUAP–Moodle: visão geral](integracao-suap-moodle-visao-geral.md)
+- [Tratamento de Usuários sem E-mail no Moodle e na Integração com o SUAP](tratamento-usuarios-sem-email-moodle-suap.md)
 
 ## Nível de confiabilidade
 
