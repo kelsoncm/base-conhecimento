@@ -110,6 +110,11 @@ nav:
           - Configuração de E-mail Institucional: ifrn/suap/configuracao-email-institucional.md
           - Integração com a API do SUAP: ifrn/suap/integracao-api-suap.md
           - PGD e RSC (Preenchimento de Tempo): ifrn/suap/pgd-rsc-preenchimento-tempo.md
+      - Programa de Gestão (PGD):
+          - ifrn/pgd/index.md
+          - Cadastrar o PIT do mês: ifrn/pgd/cadastrar-pit.md
+          - Replicar o PIT de um mês anterior: ifrn/pgd/replicar-pit-mes-anterior.md
+          - Preencher o RIT do mês: ifrn/pgd/preencher-rit.md
       - AVA (Moodle):
           - Integração SUAP e Moodle (visão geral): ifrn/ava/integracao-suap-moodle-visao-geral.md
           - SSO do Moodle com auth_suap: ifrn/ava/sso-moodle-auth-suap.md

@@ -27,6 +27,12 @@ Bem-vindo ao acervo de anotações técnicas e tutoriais práticos organizados n
     
     [:octicons-arrow-right-24: Ver artigos do SUAP](suap/lentidao-modulo-rsc.md)
 
+-   :material-calendar-check-outline: **Programa de Gestão (PGD)**
+    <br>
+    Conceitos (adesão, PES, PIT, RIT), prazos, cadastro e réplica do PIT mensal e preenchimento do RIT no SUAP.
+    
+    [:octicons-arrow-right-24: Ver PGD](pgd/index.md)
+
 -   :material-school-outline: **AVA (Moodle)**
     <br>
     Integração SUAP–Moodle, SSO, ambiente de desenvolvimento, build da imagem, tema e plugins de gamificação.
