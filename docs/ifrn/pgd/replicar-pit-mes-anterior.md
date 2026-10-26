@@ -55,7 +55,7 @@ Abra o PIT do mês anterior (Meu PGD → **Planejamento (PIT)**) e anote:
 
 ### 5. Solicitar aprovação
 
-Menu **Ações** do PIT → solicitar aprovação/homologação, até o dia 25 do mês anterior ao planejado.
+Use o botão **Solicitar aprovação/homologação** no topo do PIT (exige a senha do SUAP), até o dia 25 do mês anterior ao planejado. Detalhes em [Cadastrar o PIT do mês](cadastrar-pit.md#7-solicitar-aprovacao).
 
 ## Automação com assistente de navegador
 
@@ -63,7 +63,10 @@ O procedimento é repetitivo e funciona bem com um assistente de IA que opere o 
 
 - A **criação** do PIT pede a senha do SUAP. O servidor cria o PIT vazio e o assistente preenche o resto.
 - Os formulários de dados básicos, cronogramas e entregas **não pedem senha** e podem ser preenchidos pelo assistente.
-- A **solicitação de aprovação** é irreversível e deve ser confirmada pelo servidor.
+- A **solicitação de aprovação** também pede a senha do SUAP. O assistente pode abrir a tela e marcar "Confirmo esta operação", e o servidor digita a senha e envia.
+- Os formulários precisam ser **enviados pela própria página**: preencher os campos e clicar em **Salvar**. Um envio direto por requisição HTTP (ex.: `fetch` com POST) responde com sucesso (200) mas **não grava** os dados.
+- Para levar os dados do PIT-modelo de uma página para outra durante a automação, use `sessionStorage`, já que variáveis JavaScript se perdem a cada navegação. Limpe ao final.
+- Confira o resultado de cada envio: a página volta para o PIT com a mensagem "A entrega do PIT foi cadastrada com sucesso."
 
 Rotas usadas (substitua `<id>` pelo ID do PIT e `<id_pes>` pelo ID da entrega do PES):
 

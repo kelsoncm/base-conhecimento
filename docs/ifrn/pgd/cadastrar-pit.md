@@ -60,6 +60,9 @@ O formulário aceita **recorrência**, então o mês inteiro pode ser cadastrado
 
 Confira o **Total** exibido na aba (ex.: 22 dias × 4h = 88h). Para remover um dia específico, exclua a linha correspondente.
 
+!!! note "Recorrência não pula feriados"
+    A repetição cadastra todos os dias da semana marcados, inclusive feriados. Exclua as linhas desses dias se não houver atendimento.
+
 ### 4. Cronograma de trabalho presencial
 
 Só preencha se o regime tiver dias presenciais. O formulário (`/pgd2/cadastrar_trabalho_presencial_pit/<id>/`) segue a mesma lógica do cronograma de teletrabalho.
@@ -87,9 +90,19 @@ Campos da entrega:
 
 No topo do PIT, compare **Horas previstas para planejamento** com **Horas planejadas**. Ajuste o tempo das entregas se necessário, lembrando os feriados do mês.
 
+O sistema **não bloqueia** horas planejadas acima das previstas: um PIT com 168h planejadas para 152h previstas chegou a ser homologado. Mesmo assim, recomenda-se que as horas planejadas sejam iguais às previstas, para o plano refletir a carga real do mês.
+
 ### 7. Solicitar aprovação
 
-Com o PIT completo, use o menu **Ações** do PIT para solicitar aprovação/homologação à chefia. O topo da página lista o que ainda impede a solicitação. O andamento fica em **Consultas → Solicitações de aprovação ou homologação**.
+1. Enquanto faltar algo, o topo do PIT lista as pendências (ex.: "É necessário cadastrar os dados básicos", "É necessário cadastrar, no mínimo, uma entrega", cronograma de teletrabalho obrigatório para teletrabalho parcial ou integral).
+2. Com os requisitos cumpridos, a situação passa a **Em fase de Cadastro/Aguardando envio para Aprovação/Homologação** e aparece o botão **Solicitar aprovação/homologação** no topo do PIT.
+3. Na tela de solicitação:
+    - **Justificativa/Observação**: opcional.
+    - **Confirmo esta operação**: obrigatório.
+    - **Senha para confirmação**: senha do SUAP.
+4. Clique em **Enviar**.
+
+O andamento e o parecer da chefia ficam em **Consultas → Solicitações de aprovação ou homologação**.
 
 ## Quando escalar
 

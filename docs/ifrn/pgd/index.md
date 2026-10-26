@@ -54,7 +54,7 @@ Conforme as orientações exibidas no próprio PIT:
 
 ### Situações comuns
 
-- PIT/RIT: **Em Fase de Cadastro** → (solicitação de aprovação) → **Homologado**.
+- PIT/RIT: **Em Fase de Cadastro** → **Em fase de Cadastro/Aguardando envio para Aprovação/Homologação** (requisitos mínimos cumpridos; o botão de solicitação aparece) → (solicitação enviada) → **Homologado**.
 - O RIT do mês nasce junto com o PIT e fica "Em Fase de Cadastro" até ser preenchido.
 
 ### Indicadores de horas no topo do PIT/RIT
