@@ -6,7 +6,7 @@
 > **NÃO se trata de base oficial, canal institucional ou documentação formal do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN).**
 > Procedimentos, tutoriais e notas refletem experiências práticas e de estudo individuais, devendo ser avaliados criteriosamente antes de qualquer aplicação em produção. Para diretrizes e orientações institucionais formais, consulte sempre os canais e sistemas oficiais do IFRN.
 
-Repositório pessoal de artigos técnicos, guias e procedimentos práticos. Atualmente, os procedimentos e estudos organizados estão agrupados na subpasta [`docs/ifrn/`](docs/ifrn/), contextualizados a sistemas e serviços vivenciados no dia a dia técnico. Na raiz do site publicado, o acesso é automaticamente redirecionado para a seção `ifrn/`.
+Repositório pessoal de artigos técnicos, guias e procedimentos práticos. Atualmente, os procedimentos e estudos organizados estão agrupados na subpasta [`docs/ifrn/`](docs/ifrn/), contextualizados a sistemas e serviços vivenciados no dia a dia técnico. Na raiz do site publicado, o acesso é automaticamente redirecionado para a seção `ifrn/`. A seção [`docs/desenvolvimento/`](docs/desenvolvimento/) reúne notas de desenvolvimento e automação que não dependem de sistemas institucionais.
 
 ## Estrutura
 
@@ -43,6 +43,11 @@ docs/
 │  │  └─ guacamole-solicitacao.md
 │  └─ licencas/
 │     └─ office365-microsoft365-licencas.md
+├─ desenvolvimento/
+│  ├─ index.md
+│  └─ github-actions/
+│     ├─ publicar-action-marketplace.md
+│     └─ usar-pytest-coverage-gate.md
 templates/
 └─ artigo.md
 ```
@@ -113,6 +118,13 @@ templates/
 ```bash
 uv run --with-requirements requirements.txt mkdocs serve
 ```
+
+## Artigos disponíveis (Seção Desenvolvimento)
+
+### GitHub Actions (2 artigos)
+
+- [Publicar uma Action no GitHub Marketplace](docs/desenvolvimento/github-actions/publicar-action-marketplace.md)
+- [Usar a Action pytest-coverage-gate](docs/desenvolvimento/github-actions/usar-pytest-coverage-gate.md)
 
 ## Fonte
 
