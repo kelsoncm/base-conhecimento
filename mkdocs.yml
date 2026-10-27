@@ -157,6 +157,11 @@ nav:
           - Solicitação via Guacamole: ifrn/acesso-remoto/guacamole-solicitacao.md
       - Licenças:
           - Office 365 e Microsoft 365: ifrn/licencas/office365-microsoft365-licencas.md
+  - Desenvolvimento:
+      - Apresentação: desenvolvimento/index.md
+      - GitHub Actions:
+          - Publicar uma Action no Marketplace: desenvolvimento/github-actions/publicar-action-marketplace.md
+          - Usar a Action pytest-coverage-gate: desenvolvimento/github-actions/usar-pytest-coverage-gate.md
   - Sobre:
       - Como Contribuir: contribuindo.md
       - Política de Segurança: seguranca.md
