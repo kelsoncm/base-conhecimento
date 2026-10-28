@@ -45,9 +45,11 @@ docs/
 │     └─ office365-microsoft365-licencas.md
 ├─ desenvolvimento/
 │  ├─ index.md
-│  └─ github-actions/
-│     ├─ publicar-action-marketplace.md
-│     └─ usar-pytest-coverage-gate.md
+│  ├─ github-actions/
+│  │  ├─ publicar-action-marketplace.md
+│  │  └─ usar-pytest-coverage-gate.md
+│  └─ claude-code/
+│     └─ plugin-telegram-windows.md
 templates/
 └─ artigo.md
 ```
@@ -125,6 +127,10 @@ uv run --with-requirements requirements.txt mkdocs serve
 
 - [Publicar uma Action no GitHub Marketplace](docs/desenvolvimento/github-actions/publicar-action-marketplace.md)
 - [Usar a Action pytest-coverage-gate](docs/desenvolvimento/github-actions/usar-pytest-coverage-gate.md)
+
+### Claude Code (1 artigo)
+
+- [Plugin Telegram no Windows](docs/desenvolvimento/claude-code/plugin-telegram-windows.md)
 
 ## Fonte
 
