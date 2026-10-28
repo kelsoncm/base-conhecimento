@@ -48,6 +48,8 @@ docs/
 │  ├─ github-actions/
 │  │  ├─ publicar-action-marketplace.md
 │  │  └─ usar-pytest-coverage-gate.md
+│  ├─ telegram/
+│  │  └─ criar-bot-telegram.md
 │  └─ claude-code/
 │     └─ plugin-telegram-windows.md
 templates/
@@ -127,6 +129,10 @@ uv run --with-requirements requirements.txt mkdocs serve
 
 - [Publicar uma Action no GitHub Marketplace](docs/desenvolvimento/github-actions/publicar-action-marketplace.md)
 - [Usar a Action pytest-coverage-gate](docs/desenvolvimento/github-actions/usar-pytest-coverage-gate.md)
+
+### Telegram (1 artigo)
+
+- [Criar e configurar um bot no Telegram](docs/desenvolvimento/telegram/criar-bot-telegram.md)
 
 ### Claude Code (1 artigo)
 

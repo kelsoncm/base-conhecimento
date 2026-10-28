@@ -67,7 +67,7 @@ Alternativa: `scoop install bun`.
 
 ### 3. Criar o bot e salvar o token
 
-1. No Telegram, fale com o **@BotFather**, use `/newbot` e copie o token (formato `123456789:AAH...`).
+1. No Telegram, fale com o **@BotFather**, use `/newbot` e copie o token (formato `123456789:AAH...`). O passo a passo completo, com perfil, privacidade, teste do token e conflitos de polling, está em [Criar e configurar um bot no Telegram](../telegram/criar-bot-telegram.md).
 2. No Claude Code:
 
    ```text

@@ -9,6 +9,10 @@ Anotações técnicas sobre desenvolvimento de software, automação e publicaç
 - [Publicar uma Action no GitHub Marketplace](github-actions/publicar-action-marketplace.md): fluxo completo, armadilhas de tags e versão, trusted publisher do PyPI e validação do `@v1`.
 - [Usar a Action pytest-coverage-gate](github-actions/usar-pytest-coverage-gate.md): catraca de cobertura de testes em pre-commit, CLI e GitHub Actions.
 
+### Telegram
+
+- [Criar e configurar um bot no Telegram](telegram/criar-bot-telegram.md): BotFather, teste do token pela Bot API, chat ID, polling x webhook e conflitos 409.
+
 ### Claude Code
 
 - [Plugin Telegram no Windows](claude-code/plugin-telegram-windows.md): instalação do plugin, dependência do Bun via winget, token do bot, pareamento e allowlist.
