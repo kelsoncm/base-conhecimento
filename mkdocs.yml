@@ -162,6 +162,8 @@ nav:
       - GitHub Actions:
           - Publicar uma Action no Marketplace: desenvolvimento/github-actions/publicar-action-marketplace.md
           - Usar a Action pytest-coverage-gate: desenvolvimento/github-actions/usar-pytest-coverage-gate.md
+      - Claude Code:
+          - Plugin Telegram no Windows: desenvolvimento/claude-code/plugin-telegram-windows.md
   - Sobre:
       - Como Contribuir: contribuindo.md
       - Política de Segurança: seguranca.md
