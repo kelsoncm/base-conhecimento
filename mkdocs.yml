@@ -166,6 +166,7 @@ nav:
           - Criar e configurar um bot: desenvolvimento/telegram/criar-bot-telegram.md
       - Claude Code:
           - Plugin Telegram no Windows: desenvolvimento/claude-code/plugin-telegram-windows.md
+          - Usar a skill moodle-plugin: desenvolvimento/claude-code/usar-skill-moodle-plugin.md
   - Sobre:
       - Como Contribuir: contribuindo.md
       - Política de Segurança: seguranca.md

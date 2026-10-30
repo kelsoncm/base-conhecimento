@@ -51,7 +51,8 @@ docs/
 │  ├─ telegram/
 │  │  └─ criar-bot-telegram.md
 │  └─ claude-code/
-│     └─ plugin-telegram-windows.md
+│     ├─ plugin-telegram-windows.md
+│     └─ usar-skill-moodle-plugin.md
 templates/
 └─ artigo.md
 ```
@@ -137,6 +138,7 @@ uv run --with-requirements requirements.txt mkdocs serve
 ### Claude Code (1 artigo)
 
 - [Plugin Telegram no Windows](docs/desenvolvimento/claude-code/plugin-telegram-windows.md)
+- [Usar a skill moodle-plugin](docs/desenvolvimento/claude-code/usar-skill-moodle-plugin.md)
 
 ## Fonte
 
