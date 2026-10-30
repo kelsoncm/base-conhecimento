@@ -18,43 +18,58 @@ Cada plugin Moodle novo repetia os mesmos problemas:
 
 ## Contexto
 
-A skill `moodle-plugin` reúne, num só lugar, o que funcionou nos plugins da EduPlay Moodle Suite e o que a revisão do `mod_imagemap` reprovou. Uma skill é um arquivo `SKILL.md` com instruções que o agente carrega sozinho quando a descrição combina com a tarefa. Ela vale no Claude Code e, pelo mesmo link, no Gemini CLI.
+A skill `moodle-plugin` reúne, num só lugar, o que funcionou nos plugins da EduPlay Moodle Suite e o que a revisão do `mod_imagemap` reprovou. Uma skill é um arquivo `SKILL.md` com instruções que o agente carrega sozinho quando a descrição combina com a tarefa.
 
-Ela fica em `~/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin/`:
+Ela é pública, em inglês e sem convenções pessoais: [moodle-by-kelsoncm/moodle-plugin-skill](https://github.com/moodle-by-kelsoncm/moodle-plugin-skill). Vem empacotada como plugin do Claude Code, e a pasta da skill também funciona em outros agentes, como o Gemini CLI.
 
-| Arquivo | Conteúdo |
+| Arquivo (em `plugins/moodle-plugin/skills/moodle-plugin/`) | Conteúdo |
 |---|---|
 | `SKILL.md` | Quando usar, padrão do código, estrutura do repositório, validação local, documentação, release e Marketplace |
 | `references/review-checklist.md` | Checklist do que o revisor do Marketplace aponta, com a correção de cada item |
 | `references/act.md` | Validação com `act` (inclusive no Windows), eslint e grunt no container do job, conversão de JS legado, Moodle temporário para testes no navegador e capturas |
 | `references/release-marketplace.md` | Release por rascunho, verificação da release publicada, envio manual ou automático ao Marketplace, página do plugin e ressubmissão |
 
+As minhas convenções (issues, commits em pt-BR, campos de tempo, pastas das famílias de plugins e regras de publicação) ficam numa skill à parte, `moodle-plugin-pessoal`, em `~/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin-pessoal/`. Ela é carregada junto com a pública.
+
 ## Procedimento
 
 ### 1. Instalar (uma vez por máquina)
 
-A skill é linkada nas pastas de skills do Claude e do Gemini. Ela não é copiada, então editar o repositório atualiza os dois.
+**Opção A: plugin do Claude Code** (qualquer pessoa)
+
+```text
+/plugin marketplace add moodle-by-kelsoncm/moodle-plugin-skill
+/plugin install moodle-plugin@moodle-by-kelsoncm
+```
+
+**Opção B: clone e link** (o que eu uso, porque edito a skill e as mudanças valem na hora, no Claude e no Gemini)
 
 Linux e macOS:
 
 ```bash
-ln -s ~/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin ~/.claude/skills/moodle-plugin
-ln -s ~/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin ~/.gemini/config/skills/moodle-plugin
+git clone git@github.com:moodle-by-kelsoncm/moodle-plugin-skill.git ~/projetos/PESSOAL/mbkw/moodle-plugin-skill
+ln -s ~/projetos/PESSOAL/mbkw/moodle-plugin-skill/plugins/moodle-plugin/skills/moodle-plugin ~/.claude/skills/moodle-plugin
+ln -s ~/projetos/PESSOAL/mbkw/moodle-plugin-skill/plugins/moodle-plugin/skills/moodle-plugin ~/.gemini/config/skills/moodle-plugin
+ln -s ~/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin-pessoal ~/.claude/skills/moodle-plugin-pessoal
+ln -s ~/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin-pessoal ~/.gemini/config/skills/moodle-plugin-pessoal
 ```
 
 Windows (PowerShell 7.6+ com o modo de desenvolvedor ativo):
 
 ```powershell
-$src = "$HOME/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin"
-New-Item -ItemType SymbolicLink -Path "$HOME/.claude/skills/moodle-plugin" -Target $src
-New-Item -ItemType SymbolicLink -Path "$HOME/.gemini/config/skills/moodle-plugin" -Target $src
+$pub = "$HOME/projetos/PESSOAL/mbkw/moodle-plugin-skill/plugins/moodle-plugin/skills/moodle-plugin"
+$pes = "$HOME/projetos/PESSOAL/kelsoncm/workspace/skills/moodle-plugin-pessoal"
+foreach ($base in "$HOME/.claude/skills", "$HOME/.gemini/config/skills") {
+    New-Item -ItemType SymbolicLink -Path "$base/moodle-plugin" -Target $pub
+    New-Item -ItemType SymbolicLink -Path "$base/moodle-plugin-pessoal" -Target $pes
+}
 ```
 
-Confira numa sessão nova do Claude Code: a skill aparece na lista de skills disponíveis como `moodle-plugin`.
+Confira numa sessão nova do Claude Code: `moodle-plugin` e `moodle-plugin-pessoal` aparecem na lista de skills disponíveis. Use só uma das opções: com as duas, a skill aparece duplicada.
 
 ### 2. Usar
 
-Não é preciso chamar a skill: ela é carregada quando a tarefa envolve um plugin Moodle. Para garantir, cite-a no pedido ou use `/moodle-plugin`.
+Não é preciso chamar a skill: ela é carregada quando a tarefa envolve um plugin Moodle. Para garantir, cite-a no pedido ou use `/moodle-plugin` (`/moodle-plugin:moodle-plugin` na opção A).
 
 Exemplos de pedidos:
 
@@ -77,12 +92,16 @@ Exemplos de pedidos:
 
 ### 4. Manter a skill atualizada
 
-Quando uma revisão, um CI ou um teste revelar algo novo, peça para registrar na skill. Os pontos de revisão vão para `references/review-checklist.md`, e os do fluxo, para a referência correspondente. Como o diretório é linkado, a mudança vale na próxima sessão.
+Quando uma revisão, um CI ou um teste revelar algo novo:
+- **Lição técnica:** vai para o repositório público, por issue e PR em `moodle-by-kelsoncm/moodle-plugin-skill`. Pontos de revisão entram em `references/review-checklist.md`; os do fluxo, na referência correspondente. Atualize também a versão no `plugin.json` e o `CHANGELOG.md`: quem instalou pela opção A só recebe a mudança quando a versão sobe.
+- **Convenção pessoal:** vai para `moodle-plugin-pessoal`.
+
+Com a opção B, a mudança vale na próxima sessão.
 
 ## Quando escalar
 
 - O revisor pede algo que contradiz a skill: siga o revisor e atualize a skill.
-- A skill não carrega: confira se o link existe (`ls -l ~/.claude/skills`) e se o `SKILL.md` tem o cabeçalho com `name` e `description`.
+- A skill não carrega: confira se o link existe (`ls -l ~/.claude/skills`) e se o `SKILL.md` tem o cabeçalho com `name` e `description`. Na opção A, confira com `/plugin` se o plugin está instalado e habilitado.
 
 ## Equipe responsável
 
@@ -94,6 +113,7 @@ Kelson da Costa Medeiros (uso pessoal e nos projetos `eduplay-moodle-suite` e `m
 - [Checklist de contribuição de plugins Moodle](https://moodledev.io/general/community/plugincontribution/checklist)
 - [moodle-plugin-ci](https://moodlehq.github.io/moodle-plugin-ci/)
 - [Moodle Marketplace](https://marketplace.moodle.com/)
+- [Repositório da skill: moodle-plugin-skill](https://github.com/moodle-by-kelsoncm/moodle-plugin-skill)
 - [Exemplo de plugin no padrão: moodle-local_eduplay](https://github.com/eduplay-moodle-suite/moodle-local_eduplay)
 
 ## Nível de confiabilidade
@@ -102,5 +122,6 @@ Kelson da Costa Medeiros (uso pessoal e nos projetos `eduplay-moodle-suite` e `m
 
 ## Notas adicionais
 
-- A skill traz convenções pessoais: commits em pt-BR no formato `tipo(escopo): [TAG] ...`, campos de tempo `Estimated (h)` e `Spent (h)` e caminhos das pastas de projeto. Elas dependem das regras globais (`global_rules.md`).
+- A skill pública está em inglês para servir à comunidade Moodle; o agente continua respondendo no idioma da conversa.
+- A `moodle-plugin-pessoal` depende das regras globais (`global_rules.md`).
 - Junto com ela, use a skill `github-actions`, que define as versões das actions dos workflows.
